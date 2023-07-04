@@ -1,11 +1,12 @@
-# Mini chat 'n' video
+# webrtc-example
+A Simple WebRTC Video Chat Implementation
 
-## Installation
+## Quickstart
 
 ```
 npm install
 npm start
 ```
 
-1. <http://localhost:3000>
-2. Ouvrir plusieurs onglets pour tester la connexion.
+- Access *http://localhost:3000*
+- Open multiple pages to this address to test the connection.

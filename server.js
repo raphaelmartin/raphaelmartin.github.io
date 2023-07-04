@@ -42,5 +42,5 @@ app.get('/', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
-server.listen(process.env.PORT || 3000,
-  () => console.log('Server Listen On: *:', process.env.PORT || 3000));
+server.listen(process.env.PORT || 80,
+  () => console.log('Server Listen On: *:', process.env.PORT || 80));

@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang='fr'>
+<head>
+<meta charset='utf-8'>
+<title>Si j'étais... un fruit</title>
+<!--[if lt IE 9]>
+<script src="html5shiv.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href='style.css'>
+<link rel="stylesheet" href='mp.css'>
+<link rel="stylesheet" href="css/tooltipster.css">
+		<script type="text/javascript" src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.emoji.js"></script>
+		<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+
+<!-- Script afin de créer l'infobulle au survol de l'image du CV-->
+<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+</script>
+
+<!-- Script afin de récupérer Apple Color Emoji -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.comment').each(function(i, d){
+    $(d).emoji();
+  });
+});
+</script>
+
+<!-- Script afin de rendre les <li> du menu cliquables. Oui je sais, c'est mal, mais j'ai essayé en CSS et il faut faire passer l'élément <a> en display block, ce qui casse tout le design même en resetant les margin/padding. J'ai mis un lien normal sur les titres en guise de fallback -->
+<script>
+$(function() {
+    $('li.clickable').css('cursor', 'pointer')
+    .click(function() {
+        window.location = $('a', this).attr('href');
+        return false;
+    });
+});
+</script>
+
+</head>
+<body>
+<!-- MENU GAUCHE STYLE iMESSAGE -->
+<ul>
+	<li class="first">
+		<span class="gauche"><a href="javascript:window.history.go(-1)">Précédent</a></span><span><strong class="titre">Si j'étais...</strong></span><a href="cv.pdf" download="CV_MARTIN_Raphael"><img src="writemail.png" alt="Télécharger mon CV" id="writemail" class="tooltip" title="Télécharger mon CV au format .pdf"></a>
+	</li><hr>
+
+	<li class="clickable">
+		<img src="imground/triangle.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="forme.html">Une forme</a></strong><br>
+		C’est une forme impossible.. Je trouve qu’elle me correspond plutôt bien.</p>
+	</li><hr class="menu">
+
+	<li id="visited">
+		<img src="imground/litchi.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="fruit.html">Un fruit</a></strong><br>
+		Certains disent que ça n’a pas de goût... je leur renvoie le compliment.</p>
+	</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/sapin.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="music.html">Une saison</a></strong><br>
+		L'hiver, avec sa neige, son froid, ses sapins et surtout...son Père Noël</p>
+	</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/livre.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="livre.html">Une revue</a></strong><br>
+		C’est écrit très gros donc je peux même le lire dans le métro 13.</p>
+	</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/marie.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="marie.html">Un personnage historique</a></strong><br>
+		Oui, je sais, je ne la connaissais pas avant le film de Coppola. Et alors?</p>
+		</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/salopette.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="salopette.html">Un vêtement</a></strong><br>
+		Je n’en porte jamais pourtant. Peut-être un fantasme alors...</p>
+	</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/girafe.jpg" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="animal.html">Un animal</a></strong><br>
+		Pour regarder les gens de haut.</p>
+	</li><hr class="menu">
+
+	<li class="clickable">
+		<img src="imground/arobase.gif" class="imgmenu" alt="icone">
+		<p class="message">
+		<strong><a href="web.html">Un site web</a></strong><br>
+		C’est vrai que c’est un très beau site, et en plus il est intéressant.</p>
+	</li>
+
+	<div class="clear"></div>
+</ul>
+<!--  ///FIN DU MENU GAUCHE/// -->
+
+<!-- DEBUT SECTION DE DROITE -->
+<div class="menucentre"><p><strong class="titre">Je serais... un litchi</strong></p></div>
+<section class="bullesios">
+      <!-- Chaque <div> = une bulle iMessage -->
+      <div class="from-me">
+      <p>T'achètes des litchis pour ce soir? <span class="comment">:kissing_heart:</span></p></div>
+      <div class="clear"></div>
+
+      <div class="from-them">
+      <p>Le fruit à 3€ le kilo qui a autant de goût que de l'eau? <span class="comment">:pensive:</span></p></div>
+      <div class="clear"></div>
+      
+      <div class="from-me">
+      <p>Radin... C'est un fruit super rafraîchissant et rempli de vitamines!</p></div>
+      <div class="clear"></div>
+      
+      <div class="from-them">
+      <p>Humph...bah moi je vais m'acheter des Magnums chocolat-noisettes, t'en voudras? <span class="comment">:icecream:</span></p></div>
+      <div class="clear"></div>
+
+      <a class="image-link" href="imgbubble/magnum.jpg">
+      <img src="imgbubble/magnum.jpg" class="bubble-portrait-l" alt="Magnum Chocolat-noisettes"></a>
+      <div class="clear"></div>
+      
+      <div class="from-me">
+      <p>...</p></div>
+      <div class="clear"></div>
+
+      <div class="from-me">
+      <p>Bon ok <span class="comment">:heart_eyes:</span></p></div>
+      <div class="clear"></div>
+      <div class="clear"></div>
+</section>
+
+<!-- FORMULAIRE IN-LINE EN BAS A DROITE -->
+<footer>
+<div class="container">
+			<section>
+				<form action="traitement.php" method="post" id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1"></label></span>
+								<input id="q1" name="q1" type="text" placeholder="Pour me laisser un message, merci d'entrer votre adresse mail puis tapez Entrée"/>
+							</li>
+							<li>
+								<span><label for="q2"></label></span>
+								<input id="q2" name="q2" type="text" placeholder="Maintenant, saisissez votre nom"/>
+							</li>
+							<li>
+								<span><label for="q3"></label></span>
+								<input id="q3" name="q3" type="text" placeholder="Voilà, vous pouvez écrire votre message :-)"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send answers</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->			
+			</section>
+		</div><!-- /container --></footer>
+		<script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Merci! Je vous répondrais dès que possible!';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+
+<!-- Scripts Zoom Image -->
+<script src="magnificpopup.js"></script>
+<script>
+$('.image-link').magnificPopup({ 
+  type: 'image',
+  mainClass: 'mfp-with-zoom',
+  zoom: {
+    enabled: true,
+    duration: 300,
+    easing: 'ease-in-out',
+    opener: function(openerElement) {
+    return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
+  }
+
+});
+</script>
+
+<script>
+$( "#returnkey" ).on( "click", function(ev) {
+  ev.preventDefault();
+  self._nextQuestion();
+});
+</script>
+
+</body>
+</html>

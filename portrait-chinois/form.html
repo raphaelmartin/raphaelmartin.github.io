@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Clean Form</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="formClean.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="browsehappy">Vous utilisez un navigateur<strong>périmé</strong>. Merci <a href="http://browsehappy.com/">de le mettre à jour</a> afin d'améliorer votre expérience de navigation.</p>
+		<![endif]-->
+		<div class="wrapper">
+			<form class="formClean">
+				<div class="myView">
+					<div class="unChamp">
+						<label for="prenom"></label>
+						<input type="text" name="prenom" placeholder="Vous désirez me contacter? Laissez-moi votre adresse e-mail puis appuyez sur Entrée">
+					</div>
+					<div class="unChamp">
+						<label for="nom"></label>
+						<input type="text" name="nom" placeholder="Ecrivez votre message">
+					</div>
+
+				</div>
+				<div class="btnNext">
+					<span class="arrow arrow-right"></span>
+				</div>
+
+				<button class="btn" type="submit" value="Submit">Submit</button>
+
+			</form>
+		</div>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				formClean();
+			});
+		</script>
+	</body>
+</html>
